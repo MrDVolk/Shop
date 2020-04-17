@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Shop.Data.Interfaces;
+//using Shop.Data.Interfaces;
 using Shop.ViewModels;
+using Shop.Domain;
 
 namespace Shop.Controllers
 {

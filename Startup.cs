@@ -9,11 +9,13 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Shop.Data;
-using Shop.Data.Interfaces;
+//using Shop.Data.Interfaces;
 using Shop.Data.Mocks;
 using Microsoft.EntityFrameworkCore;
-using Shop.Data.Repository;
-using Shop.Data.Models;
+//using Shop.Data.Repository;
+//using Shop.Data.Models;
+using Shop.Domain;
+using Shop.DAL;
 
 namespace Shop
 {
@@ -30,13 +32,13 @@ namespace Shop
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<AppDBContent>(options => options.UseSqlServer(_confString.GetConnectionString("DefaultConnection")));
+            services.AddDbContext<DAL.AppDBContent>(options => options.UseSqlServer(_confString.GetConnectionString("DefaultConnection")));
             services.AddTransient<IAllCars, CarRepository>();
             services.AddTransient<ICarsCategory, CategoryRepository>();
             services.AddTransient<IAllOrders, OrdersRepository>();
 
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
-            services.AddScoped(sp => ShopCart.GetCart(sp));
+            services.AddScoped(sp => DAL.SCart.ShopCart.GetCart(sp));
 
             services.AddMvc(options => options.EnableEndpointRouting = false);
             services.AddMemoryCache();
@@ -58,8 +60,8 @@ namespace Shop
 
             using (var scope = app.ApplicationServices.CreateScope())
             {
-                AppDBContent content = scope.ServiceProvider.GetRequiredService<AppDBContent>();
-                DBObjects.Initial(content);
+                DAL.AppDBContent content = scope.ServiceProvider.GetRequiredService<DAL.AppDBContent>();
+                DAL.DBObjects.Initial(content);
             }
 
             

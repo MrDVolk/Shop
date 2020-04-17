@@ -1,9 +1,10 @@
-﻿using Shop.Data.Interfaces;
-using Shop.Data.Models;
+﻿//using Shop.Data.Interfaces;
+//using Shop.Data.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Shop.Domain;
 
 namespace Shop.Data.Mocks
 {

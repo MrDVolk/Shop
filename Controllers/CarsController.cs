@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Shop.Data.Interfaces;
-using Shop.Data.Models;
+//using Shop.Data.Interfaces;
+//using Shop.Data.Models;
 using Shop.ViewModels;
+using Shop.Domain;
+using Shop.DAL;
 
 namespace Shop.Controllers
 {
@@ -13,11 +15,15 @@ namespace Shop.Controllers
     {
         private readonly IAllCars _allCars;
         private readonly ICarsCategory _allCategories;
+        private readonly Dictionary<string, string> _categoriesRoutes = new Dictionary<string, string>();
 
         public CarsController(IAllCars allCars, ICarsCategory carsCategory)
         {
             _allCars = allCars;
             _allCategories = carsCategory;
+
+            _categoriesRoutes.Add("electro", DBObjects.Electromobiles.CategoryName);
+            _categoriesRoutes.Add("gasoline", DBObjects.CombustionEngineCars.CategoryName);
         }
 
         [Route("Cars/List")]
@@ -33,15 +39,10 @@ namespace Shop.Controllers
             }
             else
             {
-                if (string.Equals("electro", category, StringComparison.OrdinalIgnoreCase))
+                if (_categoriesRoutes.ContainsKey(category))
                 {
-                    cars = _allCars.Cars.Where(i => i.Category.CategoryName.Equals("Electromobiles")).OrderBy(i => i.Id);
-                    currCategory = "Electromobiles";
-                }
-                else if (string.Equals("gasoline", category, StringComparison.OrdinalIgnoreCase))
-                {
-                    cars = _allCars.Cars.Where(i => i.Category.CategoryName.Equals("Combustion engine cars")).OrderBy(i => i.Id);
-                    currCategory = "Combustion engine cars";
+                    _categoriesRoutes.TryGetValue(category, out currCategory);
+                    cars = _allCars.Cars.Where(i => i.Category.CategoryName.Equals(currCategory)).OrderBy(i => i.Id);
                 }
             }
 
