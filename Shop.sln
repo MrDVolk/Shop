@@ -5,9 +5,9 @@ VisualStudioVersion = 16.0.29728.190
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shop", "Shop.csproj", "{E90FDE20-E433-4201-925D-4B1107852F22}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shop.DAL", "..\Shop.DAL\Shop.DAL.csproj", "{84C1B185-AF88-40A3-B39E-2428AD9A7CA9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shop.DAL", "..\Shop\Shop.DAL\Shop.DAL.csproj", "{84C1B185-AF88-40A3-B39E-2428AD9A7CA9}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shop.Domain", "..\Shop.Domain\Shop.Domain.csproj", "{533630C6-7BBB-4117-95E2-36BF747B0507}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shop.Domain", "..\Shop\Shop.Domain\Shop.Domain.csproj", "{533630C6-7BBB-4117-95E2-36BF747B0507}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
