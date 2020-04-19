@@ -1,8 +1,0 @@
-C:\Users\Пользователь\source\repos\Shop\obj\Debug\netcoreapp3.1\Shop.csprojAssemblyReference.cache
-C:\Users\Пользователь\source\repos\Shop\obj\Debug\netcoreapp3.1\Shop.csproj.CoreCompileInputs.cache
-C:\Users\Пользователь\source\repos\Shop\obj\Debug\netcoreapp3.1\Shop.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\Пользователь\source\repos\Shop\obj\Debug\netcoreapp3.1\Shop.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\Пользователь\source\repos\Shop\obj\Debug\netcoreapp3.1\Shop.RazorAssemblyInfo.cache
-C:\Users\Пользователь\source\repos\Shop\obj\Debug\netcoreapp3.1\Shop.RazorAssemblyInfo.cs
-C:\Users\Пользователь\source\repos\Shop\obj\Debug\netcoreapp3.1\Shop.AssemblyInfoInputs.cache
-C:\Users\Пользователь\source\repos\Shop\obj\Debug\netcoreapp3.1\Shop.AssemblyInfo.cs

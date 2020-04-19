@@ -2,7 +2,7 @@
 
 namespace Shop.DAL
 {
-    public partial class ShopCart : Migration
+    public partial class ShopCartMigration : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

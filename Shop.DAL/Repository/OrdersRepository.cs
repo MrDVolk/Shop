@@ -1,20 +1,18 @@
 ﻿//using Shop.Data.Interfaces;
 //using Shop.Data.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Shop.Domain;
-using Shop.DAL.SCart;
 
-namespace Shop.DAL
+using System;
+using Shop.Domain.Interfaces;
+using Shop.Domain.Models;
+
+namespace Shop.DAL.Repository
 {
     public class OrdersRepository : IAllOrders
     {
         private readonly AppDBContent _appDBContent;
-        private readonly SCart.ShopCart _shopCart;
+        private readonly ShopCart _shopCart;
 
-        public OrdersRepository(AppDBContent appDBContent, SCart.ShopCart shopCart)
+        public OrdersRepository(AppDBContent appDBContent, ShopCart shopCart)
         {
             _appDBContent = appDBContent;
             _shopCart = shopCart;

@@ -11,7 +11,7 @@ namespace Shop.DAL
 {
     [DbContext(typeof(AppDBContent))]
     [Migration("20200331100329_ShopCart")]
-    partial class ShopCart
+    partial class ShopCartMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

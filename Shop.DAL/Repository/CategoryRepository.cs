@@ -1,12 +1,11 @@
 ﻿//using Shop.Data.Interfaces;
 //using Shop.Data.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Shop.Domain;
 
-namespace Shop.DAL
+using System.Collections.Generic;
+using Shop.Domain.Interfaces;
+using Shop.Domain.Models;
+
+namespace Shop.DAL.Repository
 {
     public class CategoryRepository : ICarsCategory
     {

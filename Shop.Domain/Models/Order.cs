@@ -1,11 +1,9 @@
-﻿using Microsoft.AspNetCore.Mvc.ModelBinding; //хз, тот ли пакет установил для этого
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc.ModelBinding; //хз, тот ли пакет установил для этого
 
-namespace Shop.Domain
+namespace Shop.Domain.Models
 {
     public class Order
     {

@@ -16,3 +16,11 @@ C:\Users\Пользователь\source\repos\Shop\Shop.Domain\obj\Debug\netcor
 C:\Users\Пользователь\source\repos\Shop\Shop.Domain\obj\Debug\netcoreapp3.1\Shop.Domain.AssemblyInfo.cs
 C:\Users\Пользователь\source\repos\Shop\Shop.Domain\obj\Debug\netcoreapp3.1\Shop.Domain.dll
 C:\Users\Пользователь\source\repos\Shop\Shop.Domain\obj\Debug\netcoreapp3.1\Shop.Domain.pdb
+C:\Users\Dmitry\Source\Repos\Shop\Shop.Domain\bin\Debug\netcoreapp3.1\Shop.Domain.deps.json
+C:\Users\Dmitry\Source\Repos\Shop\Shop.Domain\bin\Debug\netcoreapp3.1\Shop.Domain.dll
+C:\Users\Dmitry\Source\Repos\Shop\Shop.Domain\bin\Debug\netcoreapp3.1\Shop.Domain.pdb
+C:\Users\Dmitry\Source\Repos\Shop\Shop.Domain\obj\Debug\netcoreapp3.1\Shop.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Dmitry\Source\Repos\Shop\Shop.Domain\obj\Debug\netcoreapp3.1\Shop.Domain.AssemblyInfoInputs.cache
+C:\Users\Dmitry\Source\Repos\Shop\Shop.Domain\obj\Debug\netcoreapp3.1\Shop.Domain.AssemblyInfo.cs
+C:\Users\Dmitry\Source\Repos\Shop\Shop.Domain\obj\Debug\netcoreapp3.1\Shop.Domain.dll
+C:\Users\Dmitry\Source\Repos\Shop\Shop.Domain\obj\Debug\netcoreapp3.1\Shop.Domain.pdb
